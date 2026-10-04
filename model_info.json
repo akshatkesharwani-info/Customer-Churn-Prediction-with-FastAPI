@@ -1,0 +1,53 @@
+{
+  "model": "GradientBoostingClassifier",
+  "version": "1.0",
+  "auc": 0.84,
+  "features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "Contract",
+    "InternetService",
+    "OnlineSecurity",
+    "TechSupport",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "trained_at": "2026-10-04 09:48",
+  "sklearn_version": "1.6.1",
+  "risk_labels": "Low under 0.3, Medium 0.3 to 0.6, High 0.6 and above (chosen by hand, not tuned)",
+  "allowed_values": {
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "TechSupport": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Bank transfer (automatic)",
+      "Credit card (automatic)",
+      "Electronic check",
+      "Mailed check"
+    ]
+  },
+  "trained_rows": 5634
+}
